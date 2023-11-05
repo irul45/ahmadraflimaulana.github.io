@@ -1,0 +1,224 @@
+body{
+    max-width:1334px;
+     background-color: #0061cf;
+ }
+ 
+ .container{
+     font-family: Arial, Helvetica, sans-serif;
+ }
+     .head{
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     height: 69px;
+     background-color:#9c217d;
+     z-index: 999999;
+     overflow: hidden;
+ }
+ .head h2{
+    margin: auto;
+        padding-top: 15px;
+        padding-left: 15px;
+    color: rgb(224, 16, 169);
+}
+.head ul li {
+    display: inline-block;
+    position: relative;
+    left:70%;
+    bottom: 50px;
+}
+.head ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 7px;
+    transition: 0.5s;
+}
+.head ul li a:hover{
+    color: rgb(221, 158, 0);
+    text-shadow: 5px 5px 5px white,-5px -5px 5px white;
+    font-size: 20px;
+}
+.home, .project, .keterangan, .contact, .footer {
+    padding-top: 55px;
+}
+.home h1{
+    padding-left: 0%;
+    font-size: 100px;
+}
+.home h2{
+    padding-left: 20% ;
+    font-size: 15px;
+    margin-bottom: 130px;
+}
+.img{
+    width: 710px;
+    height: 520px;
+    position: absolute;
+    z-index: -1;
+    left: 65%;
+    bottom: 25%;
+   
+   border-radius:345px;
+   overflow: hidden;
+}
+
+
+
+.video{
+    translate: -100px -250px;
+    zoom: 70%;
+   
+}
+.keterangan{
+    background-color: #f3f4f5;
+ margin-bottom:50px;
+padding-bottom: 80px;
+
+}
+.keterangan h1{
+    text-align: center;
+    color:red;
+   
+}
+.keterangan h1:hover{
+    text-shadow:6px 6px 6px rgb(72, 255, 0),-5px -5px 5px #3f172848;
+
+}
+.keterangan p{
+    text-align: center;
+}
+
+
+.project{
+    background-color:#24e9e9;
+    margin-top: -120px;
+    
+    
+    
+    
+}
+.project img{
+   
+    width: 550px;
+   margin-left: 18%;
+    box-shadow:15px 15px 15px #06f32e,-15px -15px 15px rgb(243, 6, 26) ;
+    filter:blur(10px)contrast(25%);
+    transition: 0.7s;
+
+        
+}
+
+.images {
+    display: flex;
+    width: 100%;
+    transition: 2s;
+}
+
+.images img{
+    width: 100%;
+}
+
+.wrapper{
+    width: 250px;
+    margin-left: center;
+    border-radius: 5px;
+    overflow: hidden;
+    
+    
+}
+
+#slide-1:target ~ .images{
+    margin-left: 0px;
+}
+#slide-2:target ~ .images{
+    margin-left: -100%;
+}
+
+#slide-3:target ~ .images{
+    margin-left: -200%;
+}
+
+#slide-4:target ~ .images{
+    margin-left: -300%;
+}
+.video{
+    
+    border-radius: 67px;
+    translate: -24px;
+    
+    
+}
+#slide-5:target ~ .images{
+    margin-left: -400%;
+    
+    
+}
+
+.navigation a {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    background-color:gold;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 1s;
+}
+
+.navigation a:hover {
+    background-color: black;
+}
+.project img:hover{
+    filter:blur(0px);
+    width: 500px;
+    
+   
+}
+
+.project h2{
+    text-align: center;
+    font-size: 60px;
+}
+
+.project p{
+    text-align: center;
+}
+.contact{
+background-color: #f3f4f5;
+
+}
+.contact h3{
+    text-align: center;
+}
+.c{
+    margin-left: 40%;
+    width: 150px;
+}
+.footer{
+    margin-top: -25px;
+    background-color:#e92424;
+    z-index: -9999;
+}
+.footer h3{
+    text-align: center;
+
+}
+@media(max-width:1024px){
+    .home h1, .home h2 {
+     
+     text-align: left;
+     padding-left: 10px;
+    }
+        
+ }
+ 
+ @media(max-width:768px){
+     .project img{
+     margin-left: 17%;
+     }
+ }
+ 
+ 
+     
+ 
